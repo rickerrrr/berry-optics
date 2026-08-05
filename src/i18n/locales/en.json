@@ -11,7 +11,7 @@
   "hero": {
     "company": "Chengdu Berry Optoelectronics Technology Co., Ltd.",
     "tagline": "Ultra-Precision Optical Components & Specialty Optoelectronic Instruments",
-    "subtitle": "Founded in 2001, specializing in ultra-precision optical components and specialty optoelectronic detection instruments, widely used in aerospace, defense, industrial, medical, and security fields.",
+    "subtitle": "Founded in 2001, a renowned Chinese brand in picometer optical element manufacturing, specializing in ultra-precision optical components and specialty optoelectronic detection instruments, widely used in AI optical communications, aerospace, semiconductor, laser, and large scientific facilities.",
     "cta1": "About Berry",
     "cta2": "Explore Products",
     "scrollHint": "Scroll to discover",
@@ -73,6 +73,17 @@
   "cooperation": {
     "title": "Global Cooperation",
     "subtitle": "Long-term cooperation with European and American optoelectronics leaders, domestic research institutes, CASC, and CASIC"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "A Renowned Chinese Brand in Picometer Optical Element Manufacturing",
+    "positioning": "Company Positioning",
+    "certifications": "Quality Management System",
+    "strategic": "Industry-University-Research Cooperation",
+    "exhibitions": "Academic Exchange",
+    "awards": "Honors",
+    "mission": "Mission",
+    "more": "Learn More"
   },
   "news": {
     "title": "Company News",

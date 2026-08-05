@@ -166,6 +166,104 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Certifications */}
+        <section className="py-20 lg:py-28 bg-surface-white">
+          <div className="max-w-3xl mx-auto px-[--container-padding]">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="text-center mb-12"
+            >
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-brand-navy">
+                {t('about.certifications')}
+              </h2>
+              <div className="mx-auto mt-4 w-12 h-1 bg-brand-photon rounded-full" />
+            </motion.div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {company.certifications.map((cert, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                >
+                  <GlassCard className="h-full flex items-center gap-4">
+                    <div className="shrink-0 w-10 h-10 rounded-full bg-brand-photon/10 flex items-center justify-center">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M6 10L9 13L14 7" stroke="#0B6CFF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                    <span className="font-sans text-sm lg:text-base font-medium text-brand-navy">{cert}</span>
+                  </GlassCard>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Strategic Partners */}
+        <section className="py-20 lg:py-28 bg-surface-silver">
+          <div className="max-w-3xl mx-auto px-[--container-padding]">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="text-center mb-10"
+            >
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-brand-navy">
+                {t('about.strategic')}
+              </h2>
+              <div className="mx-auto mt-4 w-12 h-1 bg-brand-photon rounded-full" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
+            >
+              <GlassCard>
+                <p className="font-sans text-base lg:text-lg text-brand-navy/55 leading-relaxed">
+                  {company.strategicPartners[lang]}
+                </p>
+              </GlassCard>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Exhibitions / Academic Exchange */}
+        <section className="py-20 lg:py-28 bg-surface-white">
+          <div className="max-w-3xl mx-auto px-[--container-padding]">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="text-center mb-10"
+            >
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-brand-navy">
+                {t('about.exhibitions')}
+              </h2>
+              <div className="mx-auto mt-4 w-12 h-1 bg-brand-photon rounded-full" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
+            >
+              <GlassCard>
+                <p className="font-sans text-base lg:text-lg text-brand-navy/55 leading-relaxed">
+                  {company.exhibitions[lang]}
+                </p>
+              </GlassCard>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Mission statement */}
         <section className="py-20 lg:py-28 bg-surface-silver relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none opacity-[0.03]">

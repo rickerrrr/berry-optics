@@ -26,7 +26,14 @@ export const company = {
     },
     coordinates: { lat: 30.5868, lng: 104.0576 },
   },
-  certifications: ['ISO 9001 国际质量体系认证', 'ISO9001：2008 国际质量体系认证资质复核'],
+  certifications: [
+    'ISO 9001 国际质量体系认证',
+    'ISO 14001 国际环境管理体系认证',
+  ],
+  positioning: {
+    zh: '中国皮米光学元件制造著名品牌',
+    en: 'A Renowned Chinese Brand in Picometer Optical Element Manufacturing',
+  },
   patents: '13项发明和实用新型专利',
   researchCenters: [
     { zh: '成都贝瑞现代光电工程技术研究中心', en: 'Chengdu Berry Modern Optoelectronics Engineering Technology Research Center' },
@@ -48,9 +55,17 @@ export const company = {
     { zh: '医疗', en: 'Medical' },
     { zh: '安全', en: 'Security' },
   ],
+  strategicPartners: {
+    zh: '贝瑞光电与中国工程物理研究院、中国科学院光电技术研究所、哈尔滨工业大学、北京航空航天大学、复旦大学、上海理工大学、电子科技大学、四川大学等领军机构建立了战略合作，就相关领域和重点项目的协同创新开展合作。',
+    en: 'Berry Optics has established strategic cooperation with leading institutions including China Academy of Engineering Physics, Institute of Optics and Electronics (CAS), Harbin Institute of Technology, Beihang University, Fudan University, University of Shanghai for Science and Technology, University of Electronic Science and Technology of China, Sichuan University, and others, carrying out collaborative innovation in related fields and key projects.',
+  },
+  exhibitions: {
+    zh: '贝瑞近年在第二十五届全国激光学术会议、第八届国际先进光学制造青年科学家会议、2024中国（成都）国际精密光学暨机器视觉技术应用大会、2025年第九届亚太光学制造会议等全国光电领域高端学术会议上作主题报告，受到业界广泛重视。',
+    en: 'Berry has delivered keynote speeches at the 25th National Laser Academic Conference, the 8th International Advanced Optical Manufacturing Young Scientists Conference, the 2024 China (Chengdu) International Precision Optics and Machine Vision Technology Application Conference, the 2025 9th Asia-Pacific Optical Manufacturing Conference, and other national-level photoelectric academic conferences, receiving widespread industry recognition.',
+  },
   cooperation: {
-    zh: '与欧美等近十家光电行业领袖企业建立长期合作业务，同时与国内多所科研院所和航天科技、航天科工集团常年开展科研合作。',
-    en: 'Long-term cooperation with nearly 10 leading optoelectronics enterprises in Europe and America, ongoing research collaboration with domestic research institutes, China Aerospace Science and Technology (CASC), and China Aerospace Science and Industry (CASIC).',
+    zh: '与欧美等近十家光电行业领袖企业建立长期合作业务，同时与国内多所科研院所和航天科技、航天科工集团常年开展科研合作。产品广泛应用于大数据、光通讯、航空航天、半导体、激光、大科学装置等领域。',
+    en: 'Long-term cooperation with nearly 10 leading optoelectronics enterprises in Europe and America, ongoing research collaboration with domestic research institutes, China Aerospace Science and Technology (CASC), and China Aerospace Science and Industry (CASIC). Products widely applied in big data, optical communications, aerospace, semiconductors, lasers, and large scientific facilities.',
   },
   awards: [
     { year: '2009', desc: { zh: '第十一届中国风险投资论坛前十强、2009中国最具投资潜质的创新企业', en: 'Top 10 at the 11th China Venture Capital Forum, Most Investment-Potential Innovative Enterprise 2009' } },
