@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品中心",
+    "technology": "技术能力",
+    "news": "公司动态",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "language": "EN"
+  },
+  "hero": {
+    "company": "成都贝瑞光电科技股份有限公司",
+    "tagline": "超精密光学元器件和特种光电探测仪器",
+    "subtitle": "成立于2001年，专业从事超精密光学元器件和特种光电探测仪器研制，产品广泛应用于航空航天、国防军工、工业、医疗、安全等领域。",
+    "cta1": "了解贝瑞",
+    "cta2": "探索产品",
+    "scrollHint": "向下滚动探索",
+    "param1": "Laser Wavelength",
+    "param2": "Surface Accuracy",
+    "param3": "Surface Roughness"
+  },
+  "enterprise": {
+    "title": "企业实力",
+    "subtitle": "二十年精密光学制造沉淀",
+    "stats": {
+      "founded": "2001年成立",
+      "patents": "13项专利",
+      "categories": "4大产品体系",
+      "areas": "5大应用领域"
+    }
+  },
+  "capabilities": {
+    "title": "技术能力",
+    "subtitle": "研发、检测、生产全链路光学制造能力",
+    "items": {
+      "research": {
+        "title": "研发中心",
+        "desc": "成都贝瑞现代光电工程技术研究中心、院士（专家）创新工作站、超光滑抛光技术实验室，建立国际国内高端技术与产业合作平台。"
+      },
+      "inspection": {
+        "title": "检测中心",
+        "desc": "配备精密数显投影仪、ZYGO数字平面干涉仪、分光光度计、粗糙度轮廓仪等先进检测设备，专业检测团队保障技术研发与产品生产。"
+      },
+      "production": {
+        "title": "生产中心",
+        "desc": "拥有铣磨、精磨、抛光、磨边、检测、胶合在内的全套光学加工生产线及专门用于超光滑抛光的生产车间，满足客户各类定制需求。"
+      }
+    }
+  },
+  "products": {
+    "title": "产品中心",
+    "subtitle": "超精密光学元器件",
+    "categories": {
+      "ultra-smooth": "超光滑元件",
+      "infrared": "红外元件",
+      "visible": "可见光元件",
+      "uv": "紫外元件"
+    },
+    "cta": "查看详情",
+    "inquire": "在线咨询"
+  },
+  "applications": {
+    "title": "应用领域",
+    "subtitle": "服务国家关键行业",
+    "items": {
+      "aerospace": "航空航天",
+      "defense": "国防军工",
+      "industrial": "工业",
+      "medical": "医疗",
+      "security": "安全"
+    }
+  },
+  "cooperation": {
+    "title": "全球合作",
+    "subtitle": "与欧美光电行业领袖企业及国内科研院所、航天科技/航天科工集团长期合作"
+  },
+  "news": {
+    "title": "公司动态",
+    "subtitle": "贝瑞光电最新动态与荣誉"
+  },
+  "ai": {
+    "title": "Berry AI 光学助手",
+    "placeholder": "请输入您需要的光学元件或参数...",
+    "greeting": "您好！我是 Berry AI 光学助手。我可以帮您查询产品参数、推荐光学方案、获取技术资料。",
+    "suggestions": {
+      "s1": "我需要1064nm激光反射镜",
+      "s2": "红外透镜有哪些材料？",
+      "s3": "超光滑元件表面粗糙度？"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "欢迎联系贝瑞光电",
+    "company": "公司名称",
+    "phone": "联系电话",
+    "tel": "固定电话",
+    "fax": "传真",
+    "email": "电子邮箱",
+    "website": "官方网站",
+    "address": "公司地址",
+    "icp": "备案号"
+  },
+  "footer": {
+    "rights": "版权所有",
+    "address": "成都贝瑞光电科技股份有限公司",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    }
+  }
+}

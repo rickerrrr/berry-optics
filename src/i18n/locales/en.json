@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "technology": "Technology",
+    "news": "News",
+    "about": "About",
+    "contact": "Contact",
+    "language": "EN"
+  },
+  "hero": {
+    "company": "Chengdu Berry Optoelectronics Technology Co., Ltd.",
+    "tagline": "Ultra-Precision Optical Components & Specialty Optoelectronic Instruments",
+    "subtitle": "Founded in 2001, specializing in ultra-precision optical components and specialty optoelectronic detection instruments, widely used in aerospace, defense, industrial, medical, and security fields.",
+    "cta1": "About Berry",
+    "cta2": "Explore Products",
+    "scrollHint": "Scroll to discover",
+    "param1": "Laser Wavelength",
+    "param2": "Surface Accuracy",
+    "param3": "Surface Roughness"
+  },
+  "enterprise": {
+    "title": "Enterprise Strength",
+    "subtitle": "Two decades of precision optical manufacturing",
+    "stats": {
+      "founded": "Founded 2001",
+      "patents": "13 Patents",
+      "categories": "4 Product Lines",
+      "areas": "5 Application Areas"
+    }
+  },
+  "capabilities": {
+    "title": "Technology Capabilities",
+    "subtitle": "R&D, inspection, and production across the full optical manufacturing chain",
+    "items": {
+      "research": {
+        "title": "R&D Center",
+        "desc": "Chengdu Berry Modern Optoelectronics Engineering Technology Research Center, Academician (Expert) Innovation Workstation, and Ultra-Smooth Polishing Technology Laboratory, establishing high-end technology and industrial cooperation platforms at home and abroad."
+      },
+      "inspection": {
+        "title": "Inspection Center",
+        "desc": "Equipped with precision digital display projectors, ZYGO digital flat interferometers, spectrophotometers, roughness profilometers, and a professional inspection team to guarantee technology R&D and product production."
+      },
+      "production": {
+        "title": "Production Center",
+        "desc": "A complete set of optical processing production lines including milling, fine grinding, polishing, edging, inspection, and cementing, plus workshops dedicated to ultra-smooth polishing, meeting various customized customer needs."
+      }
+    }
+  },
+  "products": {
+    "title": "Product Center",
+    "subtitle": "Ultra-Precision Optical Components",
+    "categories": {
+      "ultra-smooth": "Ultra-Smooth Elements",
+      "infrared": "Infrared Elements",
+      "visible": "Visible Light Elements",
+      "uv": "UV Elements"
+    },
+    "cta": "View Details",
+    "inquire": "Inquire Now"
+  },
+  "applications": {
+    "title": "Application Areas",
+    "subtitle": "Serving critical national industries",
+    "items": {
+      "aerospace": "Aerospace",
+      "defense": "Defense & Military",
+      "industrial": "Industrial",
+      "medical": "Medical",
+      "security": "Security"
+    }
+  },
+  "cooperation": {
+    "title": "Global Cooperation",
+    "subtitle": "Long-term cooperation with European and American optoelectronics leaders, domestic research institutes, CASC, and CASIC"
+  },
+  "news": {
+    "title": "Company News",
+    "subtitle": "Latest updates and honors from Berry Optics"
+  },
+  "ai": {
+    "title": "Berry AI Optical Assistant",
+    "placeholder": "Enter optical elements or parameters you need...",
+    "greeting": "Hello! I'm the Berry AI Optical Assistant. I can help you find product parameters, recommend optical solutions, and access technical documentation.",
+    "suggestions": {
+      "s1": "I need a 1064nm laser mirror",
+      "s2": "What materials are available for IR lenses?",
+      "s3": "Surface roughness of ultra-smooth elements?"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with Berry Optics",
+    "company": "Company Name",
+    "phone": "Mobile Phone",
+    "tel": "Telephone",
+    "fax": "Fax",
+    "email": "Email",
+    "website": "Website",
+    "address": "Address",
+    "icp": "ICP Record"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "address": "Chengdu Berry Optoelectronics Technology Co., Ltd.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}
