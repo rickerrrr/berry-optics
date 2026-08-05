@@ -1,23 +1,22 @@
 /**
- * Berry Optics - AI Assistant API Route
- * Connects to Hermes backend for the floating AI chat widget.
- * Source: design-spec.md Section 4.4 - AI Assistant Widget
+ * 贝瑞AI销售顾问 — API 路由 V2.0
+ * 连接 berry_api.py (ChromaDB RAG + 身份规则 + LiteLLM)
  *
- * This is API routing logic only — no visual code.
+ * 升级内容:
+ * - 后端: Hermes(61364) → berry_api(8000) with RAG
+ * - System Prompt: 通用光学 → 贝瑞6条身份规则
+ * - 新增: 线索采集端点 POST /api/lead
  */
 
 import { NextRequest, NextResponse } from 'next/server';
 
-const HERMES_BACKEND_URL = process.env.HERMES_BACKEND_URL || 'http://127.0.0.1:61364';
-const HERMES_MODEL = process.env.HERMES_MODEL || 'doubao-seed-2-1-pro-260628';
+const BERRY_API_URL = process.env.BERRY_API_URL || 'http://127.0.0.1:8000';
 
 export async function POST(request: NextRequest) {
-  let lang = 'zh';
-
   try {
     const body = await request.json();
     const message = body?.message;
-    lang = body?.lang ?? 'zh';
+    const lang = body?.lang ?? 'zh';
 
     if (!message || typeof message !== 'string') {
       return NextResponse.json(
@@ -26,26 +25,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const response = await fetch(`${HERMES_BACKEND_URL}/v1/chat/completions`, {
+    const response = await fetch(`${BERRY_API_URL}/api/chat`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: HERMES_MODEL,
-        messages: [
-          {
-            role: 'system',
-            content:
-              lang === 'zh'
-                ? '你是 Berry Optics 的 AI 助手。回答关于光学产品、精密加工、镀膜技术和质量控制的问题。保持专业、简洁、友好。如果用户的问题超出光学领域，请礼貌引导回光学话题。'
-                : 'You are the Berry Optics AI Assistant. Answer questions about optical products, precision machining, coating technology, and quality control. Be professional, concise, and friendly. If a question is outside optics, politely guide back to optical topics.',
-          },
-          { role: 'user', content: message },
-        ],
-        max_tokens: 1024,
-        temperature: 0.7,
-      }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, lang }),
     });
 
     if (!response.ok) {
@@ -53,17 +36,18 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await response.json();
-    const reply = data.choices?.[0]?.message?.content || 'No response';
 
-    return NextResponse.json({ reply });
+    return NextResponse.json({
+      reply: data.reply,
+      mode: data.mode,
+      sources: data.sources,
+    });
   } catch (error) {
-    console.error('[AI Assistant] Error:', error);
+    console.error('[Berry AI] Error:', error);
     return NextResponse.json(
       {
         error: 'Service temporarily unavailable',
-        reply: lang === 'zh'
-          ? '抱歉，服务暂时不可用，请稍后再试。'
-          : 'Sorry, the service is temporarily unavailable. Please try again later.',
+        reply: '抱歉，AI服务暂时不可用。请拨打 13708083785 直接咨询。',
       },
       { status: 503 }
     );

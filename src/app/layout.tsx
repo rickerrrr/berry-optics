@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Sora } from 'next/font/google';
 import I18nProvider from '@components/providers/I18nProvider';
+import ClientWidgets from '@components/ClientWidgets';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -65,6 +66,7 @@ export default function RootLayout({
     <html lang="zh" className={`${inter.variable} ${sora.variable}`}>
       <body>
         <I18nProvider>{children}</I18nProvider>
+        <ClientWidgets lang="zh" />
       </body>
     </html>
   );
