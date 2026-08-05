@@ -27,6 +27,8 @@ jobs:
 
       - name: Build static site
         run: npm run build:static
+        env:
+          BASE_PATH: /berry-optics
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

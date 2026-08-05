@@ -21,10 +21,13 @@
 
 /** @type {import('next').NextConfig} */
 const isStaticExport = process.env.BUILD_STATIC === 'true';
+const basePath = process.env.BASE_PATH || '';
 
 const nextConfig = {
   reactStrictMode: true,
-  // Enable static export for CloudStudio deployment
+  // GitHub Pages subdirectory support
+  ...(basePath && { basePath }),
+  // Enable static export for CloudStudio / GitHub Pages
   ...(isStaticExport && { output: 'export' }),
   transpilePackages: ['three', '@react-three/fiber', '@react-three/drei'],
   images: {
